@@ -7,10 +7,10 @@ function Page1() {
       <div style={{ paddingRight: 30 }}>
         <div>sideNav</div>
         <div>
-          <Link to="/ch1">1</Link>
+          <Link to="ch1">1</Link>
         </div>
         <div>
-          <Link to="/ch2">2</Link>
+          <Link to="ch2">2</Link>
         </div>
       </div>
       <Outlet />

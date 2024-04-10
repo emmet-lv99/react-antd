@@ -12,8 +12,8 @@ function App() {
       <GlobalNav />
       <Routes>
         <Route path="/" element={<Page1 />}>
-          <Route path="/ch1" element={<Children1 name="ch1" />}></Route>
-          <Route path="/ch2" element={<Children1 name="ch2" />}></Route>
+          <Route path="ch1" element={<Children1 name="ch1" />}></Route>
+          <Route path="ch2" element={<Children1 name="ch2" />}></Route>
         </Route>
         <Route path="2" element={<Page2 />}></Route>
       </Routes>
