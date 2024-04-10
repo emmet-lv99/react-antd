@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button } from 'antd';
 
-function Page2() {
-  return <div>Page2</div>;
-}
+const Page2 = () => {
+  const [num, setNum] = useState(0);
+  const onCClick = (symbol: string) => {
+    if (symbol == '+') {
+      setNum(num + 1);
+    } else if (num > 0) {
+      setNum(num - 1);
+    }
+  };
+  return (
+    <>
+      <Button onClick={() => onCClick('+')}>+</Button>
+      <Button onClick={() => onCClick('-')}>-</Button>
+      <p>{num}</p>
+    </>
+  );
+};
 
 export default Page2;
